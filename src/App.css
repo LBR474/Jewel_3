@@ -1,0 +1,116 @@
+
+
+
+.container {
+  height: 100vh;
+  background-color: white;
+  place-items: center;
+}
+
+
+
+.header {
+  background-color: #ffffff;
+  padding: 0px;
+  text-align: center;
+  width: 100vw;
+  height: 20vh;
+}
+.header > img {
+  width: 100%;
+  
+}
+
+.main {
+  display: flex; /* Make the container a flexbox */
+  flex-direction: row; /* Arrange children in a row */
+  height: 55%;
+}
+.leftDiv {
+  position: relative;
+  background-color: #f4f4f4;
+  padding: 0px;
+  text-align: center;
+  width: 30vw;
+  height: 100%;
+  margin: 2px;
+}
+.leftDiv Canvas {
+  z-index: 3;
+  width: 50%;
+  height: 90%;
+}
+
+.leftDivBottomTitle {
+  position: relative;
+  bottom: 0;
+  z-index: 5;
+}
+
+.rightDiv {
+  background-color: #f4f4f4;
+  padding: 0px;
+  text-align: center;
+  width: 30vw;
+  height: 100%;
+  
+}
+.rightDiv > img {
+  
+  height: 100%;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  padding: 0px;
+  text-align: center;
+  width: 100vw;
+  
+}
+
+.footer > img {
+  width: 100vw;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling the announcement */
+.announcement {
+  display: none;
+  font-size: 16px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 8px;
+  position: absolute; /* Position absolutely within leftDiv */
+  top: 10px; /* Position near the top of leftDiv */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center correction */
+  z-index: 10; /* Higher z-index to appear above the canvas */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
